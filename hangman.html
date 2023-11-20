@@ -6,11 +6,21 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>The Hangman Game</h1>
+    
     <script>
 //Random word selector
-const words = ["treehouse", "ladybug", "bicycle", "neighborhood", "elephant"];
-    var randomWord = Math.random(words)
-    console.log(randomWord)
+var words = ["treehouse", "ladybug", "bicycle", "neighborhood", "elephant"];
+    var randomWord = words[Math.floor(Math.random() * words.length)] ;
+
+//Display initial state
+var displayWord = "_".repeat(randomWord.lenght);
+var incorrectGuesses = 0;
+var maxincorrectGuesses = 6 //Maximum number if incorrect guesses
+
+//Take user input
+
+
         
 
 
