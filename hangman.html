@@ -3,20 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HangmanGame</title>
 </head>
 <body>
     <h1>The Hangman Game</h1>
+    <p>Guess the word:  <span id="randomWord"></span></p>
+
     
     <script>
 //Random word selector
 var words = ["treehouse", "ladybug", "bicycle", "neighborhood", "elephant"];
     var randomWord = words[Math.floor(Math.random() * words.length)] ;
 
+    console.log(randomWord)
 //Display initial state
-var displayWord = "_".repeat(randomWord.lenght);
+var displayWord = "_".repeat(randomWord.length);
 var incorrectGuesses = 0;
 var maxincorrectGuesses = 6 //Maximum number if incorrect guesses
+var word 
 
 //Take user input
 
